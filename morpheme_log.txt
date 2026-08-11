@@ -1,0 +1,69 @@
+
+[31;1mUsage Error: Could not find a command named "flutter".[0m
+
+Run "morpheme help" for available commands.
+[31;1mFatal error: Could not find a command named "flutter".
+
+Usage: morpheme <command> [arguments]
+
+Global options:
+-h, --help       Print this usage information.
+-v, --version    Reports the version of this tool.
+
+Available commands:
+
+Build
+  build                Build applications for Android, iOS, and web platforms.
+  prebuild             Prepare setup before build
+
+Generate
+  api                  Create a new api in page.
+  apps                 Create a new apps module.
+  assets               Generate asset constants from Flutter pubspec.yaml definitions.
+  color2dart           Generate dart color class from yaml.
+  config               Generate VS Code and Android Studio IDE configurations.
+  core                 Create a new core packages module.
+  endpoint             Generate endpoint from json2dart.yaml.
+  feature              Create a new feature module.
+  firebase             Generate google service both android & ios.
+  json2dart            Generate dart data class from json.
+  json2dart-legacy     (Deprecated) Generate dart data class from json.
+  l10n                 Generate localizations for the current project.
+  local2dart           Generate sqlite yaml to dart sqlite class helper
+  page                 Create a new page in feature module.
+  remove-apps          Remove an app module from the project.
+  remove-feature       Remove a feature module from the project.
+  remove-page          Remove a page from a specific feature.
+  remove-test          Remove test helper files from the project.
+  template-test        Generate template test code based on json2dart.yaml.
+
+Project
+  analyze              Analyze code quality in all packages using Flutter analyzer.
+  clean                Clean generated files, build artifacts, and cache from all packages.
+  coverage             Generate comprehensive test coverage reports with HTML visualization for the project and all modules.
+  create               Create a new Flutter application with Morpheme Flutter Starter Kit
+  cucumber             Run integration tests from Gherkin .feature files with comprehensive reporting
+  download             Download external resources and dependencies as configured in morpheme.yaml.
+  fix                  Apply automated fixes to Dart source code across project modules.
+  format               Format Dart source code across all project modules.
+  get                  Retrieve dependencies for all project packages and features.
+  ic-launcher          Deploy launcher icons to platform-specific directories for the specified flavor.
+  refactor             Systematically refactor and rename project components while maintaining code integrity.
+  run                  Run your Flutter app on an attached device with flavor.
+  test                 Execute Flutter unit tests for the project and all modules with optional coverage analysis.
+  unused-l10n          Detect and report unused localization keys in Dart files (optimized for large codebases). Use --no-filter-presentation to search all files. Use --auto-remove to automatically delete unused keys from ARB files. Use --backup to create backup files before removal.
+  upgrade-dependency   Upgrade package dependencies to their latest compatible versions.
+
+Shorebird
+  shorebird            Shorebird Code Push is a tool that allows you to update your Flutter app instantly over the air, without going through the store update process.
+
+Tools
+  doctor               Show information about the installed tooling.
+  init                 Initialize a new project with Morpheme configuration
+  rename               Rename files to snake_case with optional prefix/suffix
+  upgrade              Upgrade Morpheme CLI to the latest version
+
+Run "morpheme help <command>" for more information about a command.[0m
+
+If this error persists, please report it at:
+https://github.com/morphemedesign/morpheme-flutter-cli/issues

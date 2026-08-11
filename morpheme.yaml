@@ -1,0 +1,76 @@
+# Morpheme CLI Configuration
+# This file contains all the configuration needed for Morpheme CLI commands
+# Learn more: https://github.com/morphemedesign/morpheme-flutter-cli
+
+# Flavor configurations for different build environments
+flavor:
+  dev:
+    FLAVOR: dev
+    APP_NAME: Morpheme Dev
+    ANDROID_APPLICATION_ID: design.morpheme.dev
+    IOS_APPLICATION_ID: design.morpheme.dev
+    BASE_URL: https://reqres.in/api
+  stag:
+    FLAVOR: stag
+    APP_NAME: Morpheme Stag
+    ANDROID_APPLICATION_ID: design.morpheme.stag
+    IOS_APPLICATION_ID: design.morpheme.stag
+    BASE_URL: https://reqres.in/api
+  prod:
+    FLAVOR: prod
+    APP_NAME: Morpheme
+    ANDROID_APPLICATION_ID: design.morpheme
+    IOS_APPLICATION_ID: design.morpheme
+    BASE_URL: https://reqres.in/api
+
+# Firebase configuration (uncomment and configure when needed)
+#firebase:
+#  dev:
+#    project_id: "morpheme-dev"
+#    token: "YOUR FIREBASE TOKEN: firebase login:ci"
+#  stag:
+#    project_id: "morpheme-stag"
+#    token: "YOUR FIREBASE TOKEN: firebase login:ci"
+#  prod:
+#    project_id: "morpheme"
+#    token: "YOUR FIREBASE TOKEN: firebase login:ci"
+
+# Color to Dart code generation configuration
+color2dart:
+  color2dart_dir: color2dart
+  output_dir: lib/core/lib/src/themes
+
+# Localization configuration
+localization:
+  arb_dir: assets/assets/l10n
+  template_arb_file: id.arb
+  output_localization_file: s.dart
+  output_class: S
+  output_dir: core/lib/src/l10n
+  replace: false
+
+# Asset generation configuration
+assets:
+  pubspec_dir: assets
+  output_dir: assets/lib
+  create_library_file: true
+  
+# Code coverage configuration
+coverage:
+  lcov_dir: coverage/lcov.info
+  output_html_dir: coverage/html
+  remove:
+    - "*/mock/*"
+    - "*.freezed.*"
+    - "*.g.*"
+    - "*/l10n/*"
+    - "*_state.dart"
+    - "*_event.dart"
+    - "**/locator.dart"
+    - "**/environtment.dart"
+    - "core/lib/src/test/*"
+    - "core/lib/src/constants/*"
+    - "core/lib/src/themes/*"
+    - "lib/routes/routes.dart"
+    - "lib/generated_plugin_registrant.dart"
+
